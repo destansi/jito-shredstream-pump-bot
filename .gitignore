@@ -1,0 +1,8 @@
+# Ignore sensitive files
+.env
+*.json  # auth-keypair.json vb.
+target/
+Cargo.lock  # opsiyonel
+*.pem
+*.key
+*.log

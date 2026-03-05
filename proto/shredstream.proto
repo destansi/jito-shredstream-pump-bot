@@ -1,0 +1,15 @@
+syntax = "proto3";
+package shredstream;
+
+// Minimal client surface compatible with common shredstream-proxy "entries" stream.
+// If your proxy uses a different package/service name, adjust this file and rebuild.
+service ShredstreamProxy {
+  rpc SubscribeEntries(SubscribeEntriesRequest) returns (stream SubscribeEntriesResponse);
+}
+
+message SubscribeEntriesRequest {}
+
+message SubscribeEntriesResponse {
+  uint64 slot = 1;
+  bytes entries = 2; // bincode(Vec<solana_entry::entry::Entry>)
+}
