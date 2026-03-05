@@ -13,7 +13,7 @@ fi
 export KEYPAIR_PATH="${KEYPAIR_PATH:-/home/destantaham/.config/gcloud/solana/id.json}"
 
 # --- RPC (ALT + minimal reads + blockhash) ---
-export RPC_HTTP_URL="${RPC_HTTP_URL:-https://mainnet.helius-rpc.com/?api-key=8b763ff5-ce93-4a71-bee2-e85663f40f33}"
+export RPC_HTTP_URL="${RPC_HTTP_URL:-https://mainnet.helius-rpc.com/?api-key=apikey}"
 
 # --- Shredstream ---
 export SHREDSTREAM_PROXY_GRPC_URLS="${SHREDSTREAM_PROXY_GRPC_URLS:-grpc://127.0.0.1:50051}"
